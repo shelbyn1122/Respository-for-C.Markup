@@ -1,0 +1,199 @@
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('../images/head2.jpg');
+  min-height: 100%;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+  background-image: url("../images/sports.jpg");
+  min-height: 400px;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("../images/contact-us1.jpg");
+  min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+header h1, h2{
+	font-family: Lato;
+	color:#2699FB;
+  margin-top:0px; margin-bottom: 0px;
+  padding: 0px 0px;
+}
+header{
+	text-align: center;
+  margin-bottom: 50px;
+}
+/* Normalize the lists */
+  nav{
+  width: 100vw;
+  background-color: white;
+}
+ul{
+
+  padding: 0;
+  margin-left: 250px;
+
+  align-items: center;
+  /*this option by default dispose the elements in a row (flex-direction: row)*/
+  display: flex;
+}
+li{
+  list-style-type: none;  
+  margin: 0 2vw;
+  /* our font-size will be 3% of the height of the viewport */
+  font-size: 3.8vh;
+}
+a{
+  text-decoration: none;
+  
+  /*below I changed the color*/
+  color: black;
+  /*I added some padding*/
+  padding: 1vw;
+  /*also changed the font family but that's totally irrelevant*/
+  font-family: monospace;
+}
+a:hover{
+  background-color: #F5F5F5;
+}
+body{
+  margin: 0;
+}
+/*change the layout of the navigation bar for all the screens 
+that have a width less or equal than 500px*/
+
+@media only screen and (max-width: 1179px) {
+  /*shows elements in a column*/
+  ul{
+    margin-left: 0px;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  /* deletes margin on top or bottom of the a tag*/
+  li{
+    margin: 0;
+  }
+ /* makes sure that the a tag will take the entire screen*/
+  a{
+    display: block;
+  }
+}
+header h2{
+   margin-top: 0px;
+    margin-bottom: 0px;
+}
+#main2img{
+  width: 100%; height: 350px;
+}
+#firstline{
+  width:90%;
+}
+#secline{
+  width:85%;
+}
+#thirdline{
+  width:75%;
+}
+#secondary2img{
+  width: 100%; height: 350px;
+}
+.totalwidth{
+  width:100%;
+}
+#expmore{
+  margin-top:0px; margin-bottom: 0px; margin-left: 43%;
+}
+#moveref{
+  margin-top:0px; margin-bottom: 0px; margin-left: 43%;
+}
+#formbox{
+  margin:0 -16px 8px -16px;
+}
+#footerpadding{
+  padding: 10px;
+}
+#myVideo {
+position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+
+box-sizing: border-box;
+}
+#videotitle{
+  background-color: black;
+}
+/*Cookie Consent Begin*/
+#cookieConsent {
+   
+    min-height: 26px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 26px;
+    padding: 8px 0 8px 30px;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    
+    
+    z-index: 9999;
+}
+#cookieConsent a {
+    color: #4B8EE7;
+    text-decoration: none;
+}
+#closeCookieConsent {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: -15px 0 0 0;
+    font-weight: bold;
+}
+#closeCookieConsent:hover {
+    color: #FFF;
+}
+#cookieConsent a.cookieConsentOK {
+    background-color: #2699FB;
+    color: #000;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+    float: right;
+    margin: 0 60px 0 10px;
+}
+#cookieConsent a.cookieConsentOK:hover {
+    background-color: #E0C91F;
+}
+/*Cookie Consent End*/
